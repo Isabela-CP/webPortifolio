@@ -29,13 +29,6 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="about-page">
@@ -45,17 +38,21 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li class="dropdown"><a href="about.html" class="active"><span>Sobre mim</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+                    <li class="dropdown"><a href="about.html" class="active" data-pt="Sobre mim"
+                            data-en="About me"><span>Sobre
+                                mim</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="about-study.html">Trajetória de estudos</a></li>
-                            <li><a href="extracurricular.html">Extracurricular e Certificações</a></li>
+                            <li><a href="about-study.html" data-pt="Trajetória de estudos"
+                                    data-en="Study trajectory">Trajetória de estudos</a></li>
+                            <li><a href="extracurricular.html" data-pt="Extracurricular e Certificados"
+                                    data-en="Extracurricular and Certificates">Extracurricular e Certificações</a></li>
                         </ul>
                     </li>
-                    <li><a href="resume.html">Currículo</a></li>
-                    <li><a href="services.html">Interesses profissionais</a></li>
-                    <li><a href="portfolio.html">Projetos</a></li>
+                    <li><a href="resume.html" data-pt="Currículo" data-en="Resume">Currículo</a></li>
+                    <li><a href="services.html" data-pt="Interesses profissionais"
+                            data-en="Professional interests">Interesses profissionais</a></li>
+                    <li><a href="portfolio.html" data-pt="Projetos" data-en="Projects">Projetos</a></li>
 
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -90,8 +87,9 @@
 
         <section id="about-intro" class="about section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>Quem sou eu?</h2>
-                <p> Uma mente analítica com uma alma criativa </p>
+                <h2 data-pt="Quem sou eu?" data-en="Who am I?">Quem sou eu?</h2>
+                <p data-pt="Uma mente analítica com uma alma criativa" data-en="A analytical mind with a creative soul">
+                    Uma mente analítica com uma alma criativa </p>
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -99,22 +97,47 @@
 
                     <div class="col-lg-6">
                         <div class="content pe-lg-4">
-                            <p>
-                                Nascida em Resende, minha trajetória é marcada pelo interesse em explorar diferentes
-                                contextos e aprendizados. Em 2020, mudei-me para Campinas para o ensino médio, logo
-                                depois
-                                passei um ano em São Paulo e, atualmente, moro em São Carlos para os estudos na USP.
-                            </p>
-                            <p>
-                                Sempre tive afinidade com desafios intelectuais, participando de olimpíadas de
-                                matemática e dedicando tempo ao estudo de idiomas como inglês e mandarim. Esses anos de
-                                curiosidade técnica consolidaram uma base de 7 anos de experiência no setor de
-                                tecnologia.
-                            </p>
-                            <p>
-                                Fora do ambiente de desenvolvimento, busco manter uma rotina equilibrada e
-                                diversificada, valorizando interesses que trazem mais cor e leveza ao dia a dia.
-                            </p>
+                            <div class="lang-pt">
+                                <p>
+                                    Nascida em Resende/RJ, minha trajetória é marcada pelo interesse em explorar
+                                    diferentes
+                                    contextos e aprendizados. Em 2020, mudei-me para Campinas para o ensino médio, logo
+                                    depois passei um ano em São Paulo e, atualmente, moro em São Carlos para os estudos
+                                    na USP.
+                                </p>
+                                <p>
+                                    Sempre tive afinidade com desafios intelectuais, participando de olimpíadas de
+                                    matemática e dedicando tempo ao estudo de idiomas como inglês e mandarim. Esses anos
+                                    de
+                                    curiosidade técnica consolidaram uma base de 7 anos de experiência no setor de
+                                    tecnologia.
+                                </p>
+                                <p>
+                                    Fora do ambiente de desenvolvimento, busco manter uma rotina equilibrada e
+                                    diversificada, valorizando interesses que trazem mais cor e leveza ao dia a dia.
+                                </p>
+                            </div>
+
+                            <div class="lang-en" style="display:none;">
+                                <p>
+                                    Born in Resende/RJ, my journey is marked by an interest in exploring different
+                                    contexts and learning experiences. In 2020, I moved to Campinas for high school,
+                                    later spent a year in São Paulo, and currently live in São Carlos for my studies at
+                                    USP.
+                                </p>
+                                <p>
+                                    I have always had an affinity for intellectual challenges, participating in math
+                                    olympiads and dedicating time to studying languages like English and Mandarin. These
+                                    years
+                                    of technical curiosity have consolidated a 7-year foundation of experience in the
+                                    technology sector.
+                                </p>
+                                <p>
+                                    Outside of the development environment, I seek to maintain a balanced and
+                                    diverse routine, valuing interests that bring more color and lightness to my daily
+                                    life.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -170,8 +193,10 @@
 
         <section id="interests" class="interests section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>Interesses & Curiosidades</h2>
-                <p>Onde a lógica encontra a criatividade em diferentes frentes.</p>
+                <h2 data-pt="Interesses & Curiosidades" data-en="Interests & Curiosities">Interesses & Curiosidades</h2>
+                <p data-pt="Onde a lógica encontra a criatividade em diferentes frentes."
+                    data-en="Where logic meets creativity in different fronts.">Onde a lógica encontra a criatividade em
+                    diferentes frentes.</p>
             </div>
 
             <div class="container">
@@ -182,17 +207,17 @@
                             <div class="bento-glow"></div>
                             <div class="card-header-bento">
                                 <i class="bi bi-stars"></i>
-                                <h3>Universo Nerd</h3>
+                                <h3 data-pt="Universo Nerd" data-en="Nerd Universe ">Universo Nerd</h3>
                             </div>
                             <div class="interest-tags-container">
-                                <span class="tag-pill">Astronomia</span>
-                                <span class="tag-pill">Paleontologia</span>
-                                <span class="tag-pill">Star Wars</span>
-                                <span class="tag-pill">Marvel</span>
-                                <span class="tag-pill">Mitologia</span>
-                                <span class="tag-pill">Dinossauros</span>
-                                <span class="tag-pill">Fantasia</span>
-                                <span class="tag-pill">Animes</span>
+                                <span class="tag-pill" data-pt="Astronomia" data-en="Astronomy">Astronomia</span>
+                                <span class="tag-pill" data-pt="Paleontologia"
+                                    data-en="Paleontology">Paleontologia</span>
+                                <span class="tag-pill" data-pt="Star Wars" data-en="Star Wars">Star Wars</span>
+                                <span class="tag-pill" data-pt="Marvel" data-en="Marvel">Marvel</span>
+                                <span class="tag-pill" data-pt="Mitologia" data-en="Mythology">Mitologia</span>
+                                <span class="tag-pill" data-pt="Fantasia" data-en="Fantasy">Fantasia</span>
+                                <span class="tag-pill" data-pt="Animes" data-en="Anime">Animes</span>
                             </div>
                         </div>
                     </div>
@@ -209,8 +234,9 @@
                                 <span class="tag-pill tech">Game Dev</span>
                                 <span class="tag-pill tech">Web Design</span>
                                 <span class="tag-pill tech">App Mobile</span>
-                                <span class="tag-pill tech">Organização</span>
-                                <span class="tag-pill tech">Gêrencia</span>
+                                <span class="tag-pill tech" data-pt="Organização"
+                                    data-en="Organization">Organização</span>
+                                <span class="tag-pill tech" data-pt="Gêrencia" data-en="Management">Gêrencia</span>
                             </div>
                         </div>
                     </div>
@@ -220,16 +246,16 @@
                             <div class="bento-glow"></div>
                             <div class="card-header-bento">
                                 <i class="bi bi-palette"></i>
-                                <h3>Sensorial & Arte</h3>
+                                <h3 data-pt="Sensorial & Arte" data-en="Sensory & Art">Sensorial & Arte</h3>
                             </div>
                             <div class="interest-tags-container">
-                                <span class="tag-pill art">Moda</span>
-                                <span class="tag-pill art">Perfumaria</span>
-                                <span class="tag-pill art">Culinária</span>
-                                <span class="tag-pill art">Arte</span>
-                                <span class="tag-pill art">Flores</span>
-                                <span class="tag-pill art">Música</span>
-                                <span class="tag-pill art">Leitura</span>
+                                <span class="tag-pill art" data-pt="Moda" data-en="Fashion">Moda</span>
+                                <span class="tag-pill art" data-pt="Perfumaria" data-en="Perfumery">Perfumaria</span>
+                                <span class="tag-pill art" data-pt="Culinária" data-en="Culinary">Culinária</span>
+                                <span class="tag-pill art" data-pt="Arte" data-en="Art">Arte</span>
+                                <span class="tag-pill art" data-pt="Flores" data-en="Flowers">Flores</span>
+                                <span class="tag-pill art" data-pt="Música" data-en="Music">Música</span>
+                                <span class="tag-pill art" data-pt="Leitura" data-en="Reading">Leitura</span>
                             </div>
                         </div>
                     </div>
@@ -240,27 +266,39 @@
 
         <section id="values" class="values section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>Organização & Propósito</h2>
+                <h2 data-pt="Organização & Propósito" data-en="Organization & Purpose">Organização & Propósito</h2>
             </div>
 
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8">
                         <div class="philosophy-content">
-                            <p class="philosophy-text">
-                                Vejo a organização como um caminho para a clareza mental. Estruturar ideias e criar
-                                cronogramas
-                                é a minha forma de transformar o caos em ambientes funcionais e acolhedores. Valorizo
-                                espaços
-                                que incentivam a autenticidade e o aprendizado contínuo, onde o desenvolvimento acontece
-                                de
-                                forma natural e colaborativa.
-                            </p>
+                            <div class="lang-pt">
+                                <p class="philosophy-text">
+                                    Vejo a organização como um caminho para a clareza mental. Estruturar ideias e criar
+                                    cronogramas é a minha forma de transformar o caos em ambientes funcionais e
+                                    acolhedores.
+                                    Valorizo espaços que incentivam a autenticidade e o aprendizado contínuo, onde o
+                                    desenvolvimento acontece de forma natural e colaborativa.
+                                </p>
+                            </div>
+
+                            <div class="lang-en">
+                                <p class="philosophy-text">
+                                    I see organization as a path to mental clarity. Structuring ideas and creating
+                                    schedules is my way of transforming chaos into functional and welcoming
+                                    environments.
+                                    I value spaces that encourage authenticity and continuous learning, where
+                                    development happens naturally and collaboratively.
+                                </p>
+                            </div>
 
                             <div class="nerd-quote-box" data-aos="zoom-in">
                                 <div class="quote-icon"><i class="bi bi-quote"></i></div>
-                                <p>"Muito a aprender, você ainda tem."</p>
-                                <span>— Mestre Yoda</span>
+                                <q data-pt="Muito a aprender, você ainda tem." data-en="Much to learn, you still have">
+                                    Muito a aprender, você ainda
+                                    tem.</q>
+                                <span data-pt="Mestre Yoda" data-en="Master Yoda">— Mestre Yoda</span>
                             </div>
                         </div>
                     </div>
@@ -317,6 +355,7 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/lang.js"></script>
 
 </body>
 

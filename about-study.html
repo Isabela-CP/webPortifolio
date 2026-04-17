@@ -38,17 +38,20 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li class="dropdown"><a href="about.html"><span>Sobre mim</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+                    <li class="dropdown"><a href="about.html" data-pt="Sobre mim" data-en="About me"><span>Sobre
+                                mim</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="about-study.html" class="active">Trajetória de estudos</a></li>
-                            <li><a href="extracurricular.html">Extracurricular e Certificações</a></li>
+                            <li><a href="about-study.html" class="active" data-pt="Trajetória de estudos"
+                                    data-en="Study trajectory">Trajetória de estudos</a></li>
+                            <li><a href="extracurricular.html" data-pt="Extracurricular e Certificados"
+                                    data-en="Extracurricular and Certificates">Extracurricular e Certificações</a></li>
                         </ul>
                     </li>
-                    <li><a href="resume.html">Currículo</a></li>
-                    <li><a href="services.html">Interesses profissionais</a></li>
-                    <li><a href="portfolio.html">Projetos</a></li>
+                    <li><a href="resume.html" data-pt="Currículo" data-en="Resume">Currículo</a></li>
+                    <li><a href="services.html" data-pt="Interesses profissionais"
+                            data-en="Professional interests">Interesses profissionais</a></li>
+                    <li><a href="portfolio.html" data-pt="Projetos" data-en="Projects">Projetos</a></li>
 
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -82,8 +85,10 @@
     <main class="main">
         <section id="trajectory" class="trajectory section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>Minha Trajetória</h2>
-                <p>Uma jornada de aprendizado constante, do ensino fundamental à USP.</p>
+                <h2 data-pt="Minha trajetória" data-en="My trajectory">Minha Trajetória</h2>
+                <p data-pt="Uma jornada de aprendizado constante, do ensino fundamental à USP."
+                    data-en="A learning journey, from elementary school to USP.">Uma jornada de aprendizado constante,
+                    do ensino fundamental à USP.</p>
             </div>
 
             <div class="container">
@@ -102,24 +107,49 @@
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="card-content">
-                                        <span class="phase-title">Ensino Fundamental</span>
-                                        <h3>Ensino Fundamental - Resende/RJ</h3>
+                                        <span class="phase-title" data-pt="Ensino Fundamental"
+                                            data-en="Elementary School">Ensino Fundamental</span>
+                                        <h3 data-pt="Ensino Fundamental - Resende/RJ"
+                                            data-en="Elementary School - Resende/RJ">
+                                            Ensino Fundamental - Resende/RJ
+                                        </h3>
                                         <div class="learning-info">
-                                            <p><strong><i class="bi bi-code-slash"></i> O que aprendi:</strong>
+                                            <p>
+                                                <strong>
+                                                    <i class="bi bi-code-slash"></i>
+                                                    <span data-pt="O que aprendi:" data-en="What I learned:">O que
+                                                        aprendi:</span>
+                                                </strong>
                                             <ul>
-                                                <li>Conhecimentos básicos de computação focado em lógica.</li>
-                                                <li>Inglês intermediário por meio de estudos focados em conversação.
+                                                <li data-pt="Conhecimentos básicos de computação focado em lógica."
+                                                    data-en="Basic knowledge of computer science focused on logic.">
+                                                    Conhecimentos básicos de computação focado em lógica.</li>
+                                                <li data-pt="Inglês intermediário por meio de estudos focados em conversação."
+                                                    data-en="Intermediate English through studies focused on conversation.">
+                                                    Inglês intermediário por meio de estudos focados em conversação.
                                                 </li>
                                             </ul>
                                             </p>
                                         </div>
                                         <div class="extra-info">
-                                            <p><span>Extracurricular:</span>
-                                            <ul> Participação em olimpíadas de conhecimento nas áreas:
-                                                <li>Informática (OBI)</li>
-                                                <li>Matemática (OMP, OBMEP)</li>
-                                                <li>Robótica (OBR)</li>
-                                                <li>Astronomia (OBA)</li>
+                                            <p>
+                                                <span data-pt="Extracurricular:"
+                                                    data-en="Extra-curricular:">Extracurricular:</span>
+                                            <ul>
+                                                <span
+                                                    style="color: var(--contrast-color); font-weight: normal; font-size: 1rem;"
+                                                    data-pt="Participação em olimpíadas de conhecimento nas áreas:"
+                                                    data-en="Participation in knowledge olympiads in the following areas:">
+                                                    Participação em olimpíadas de conhecimento nas áreas:
+                                                </span>
+                                                <li data-pt="Informática (OBI)" data-en="Computing (OBI)">Informática
+                                                    (OBI)</li>
+                                                <li data-pt="Matemática (OMP, OBMEP)"
+                                                    data-en="Mathematics (OMP, OBMEP)">Matemática (OMP, OBMEP)</li>
+                                                <li data-pt="Robótica (OBR)" data-en="Robotics (OBR)">Robótica (OBR)
+                                                </li>
+                                                <li data-pt="Astronomia (OBA)" data-en="Astronomy (OBA)">Astronomia
+                                                    (OBA)</li>
                                             </ul>
                                             </p>
                                         </div>
@@ -142,13 +172,22 @@
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="card-content">
-                                        <span class="phase-title">Ensino Médio Técnico</span>
-                                        <h3>Curso de Informática no COTUCA - Campinas/SP</h3>
+                                        <span class="phase-title" data-pt="Ensino Médio Técnico"
+                                            data-en="Technical School">Ensino Médio Técnico</span>
+                                        <h3 data-pt="Curso de Informática no COTUCA - Campinas/SP"
+                                            data-en="Computing Course at COTUCA - Campinas/SP">Curso de Informática no
+                                            COTUCA - Campinas/SP</h3>
                                         <div class="learning-info">
-                                            <p><strong><i class="bi bi-code-slash"></i> O que aprendi:</strong>
+                                            <p data-pt="O que aprendi:" data-en="What I learned:"><strong><i
+                                                        class="bi bi-code-slash"></i> O que aprendi:</strong>
                                             <ul>
-                                                <li> Lógica de programação</li>
-                                                <li> Diversas tecnologias usadas durante disciplinas técnicas, como:
+                                                <li data-pt="Lógica de programação" data-en="Programming logic"> Lógica
+                                                    de programação</li>
+                                                <li>
+                                                    <span
+                                                        data-pt="Tecnologias usadas durante disciplinas técnicas, como:"
+                                                        data-en="Technologies used during technical disciplines, such as:">tecnologias
+                                                        usadas durante disciplinas técnicas, como:</span>
                                                     <ul>
                                                         <li>Java</li>
                                                         <li>Python</li>
@@ -162,36 +201,65 @@
                                                         <li>GitHub</li>
                                                     </ul>
                                                 </li>
-                                                <li> Programação de jogos, websites, aplicativos android.</li>
-                                                <li> Estruturas de dados</li>
-                                                <li> Metodologias de desenvolvimento</li>
+                                                <li data-pt="Programação de jogos, websites, aplicativos android."
+                                                    data-en="Game programming, websites, android applications">
+                                                    Programação de jogos, websites, aplicativos android.</li>
+                                                <li data-pt="Estruturas de dados" data-en="Data structures"> Estruturas
+                                                    de dados</li>
+                                                <li data-pt="Metodologias de desenvolvimento"
+                                                    data-en="Development methodologies"> Metodologias de desenvolvimento
+                                                </li>
                                             </ul>
                                             </p>
                                         </div>
                                         <div class="extra-info">
-                                            <p><span>Extracurricular:</span>
+                                            <p><span data-pt="Extracurricular:"
+                                                    data-en="Extra-curricular:">Extracurricular:</span>
                                             <ul>
-                                                <li>Participação em olimpíadas de conhecimento nas áreas:
+                                                <li>
+                                                    <span
+                                                        style="color: var(--contrast-color); font-weight: normal; font-size: 1rem;"
+                                                        data-pt="Participação em olimpíadas de conhecimento nas áreas:"
+                                                        data-en="Participation in knowledge olympiads in the following areas:">Participação
+                                                        em olimpíadas de conhecimento nas áreas:</span>
                                                     <ul>
-                                                        <li>Matemática (OBMEP)</li>
-                                                        <li>Astronomia (OBA)</li>
-                                                        <li>Informática (OBI)</li>
+                                                        <li data-pt="Matemática (OBMEP)" data-en="Mathematics (OBMEP)">
+                                                            Matemática (OBMEP)</li>
+                                                        <li data-pt="Astronomia (OBA)" data-en="Astronomy (OBA)">
+                                                            Astronomia (OBA)</li>
+                                                        <li data-pt="Informática (OBI)" data-en="Computing (OBI)">
+                                                            Informática (OBI)</li>
                                                     </ul>
                                                 </li>
-                                                <li> Participação em atividades como Mentoria e Congregação </li>
-                                                <li> Participação no PIC (Programa de Iniciação Científica Jr.) </li>
-                                                <li> Participação em feiras de ciências e pesquisas com o <a
-                                                        href="https://feirabragantec.com.br/2022/projeto.php?numero=79">projeto
-                                                        de TCC</a>
+                                                <li data-pt="Participação em atividades como Mentoria e Congregação"
+                                                    data-en="Participation in activities such as Mentoring and Congregation">
+                                                    Participação em atividades como Mentoria e Congregação </li>
+                                                <li data-pt="Participação no PIC (Programa de Iniciação Científica Jr.)"
+                                                    data-en="Participation in the Jr. Science Initiation Program (PIC)">
+                                                    Participação no PIC (Programa de Iniciação Científica Jr.) </li>
+                                                <li>
+                                                    <span
+                                                        style="color: var(--contrast-color); font-weight: normal; font-size: 1rem;"
+                                                        data-pt="Participação em feiras de ciências e pesquisas com o"
+                                                        data-en="Participation in science fairs and research with">Participação
+                                                        em feiras de ciências e pesquisas com o</span>
+                                                    <a href="https://feirabragantec.com.br/2022/projeto.php?numero=79"
+                                                        data-pt="projeto de TCC" data-en="TCC project">
+                                                        projeto de TCC
+                                                    </a>
                                                 </li>
-                                                <li> Curso de mandarim básico - Instituto Confúcio</li>
-                                                <li> <a
-                                                        href="https://www2.unicamp.br/unicamp/noticias/2021/12/21/docentes-e-discentes-recebem-premios-institucionais-2021/">Prêmio
+                                                <li data-pt="Curso de mandarim básico - Instituto Confúcio"
+                                                    data-en="Basic mandarin course - Confucius Institute"> Curso de
+                                                    mandarim básico - Instituto Confúcio</li>
+                                                <li> <a href="https://www2.unicamp.br/unicamp/noticias/2021/12/21/docentes-e-discentes-recebem-premios-institucionais-2021/"
+                                                        data-pt="Prêmio de Reconhecimento Discente"
+                                                        data-en="Institutional Award">Prêmio
                                                         de Reconhecimento Discente</a>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="https://2021.spaceappschallenge.org/challenges/statements/the-trail-to-mars-can-you-keep-your-crew-alive/teams/artemis-24/project/">
+                                                    <a href="https://2021.spaceappschallenge.org/challenges/statements/the-trail-to-mars-can-you-keep-your-crew-alive/teams/artemis-24/project/"
+                                                        data-pt="Projeto para NASA Space Apps Challenge"
+                                                        data-en="Project for NASA Space Apps Challenge">
                                                         Projeto para NASA Space Apps Challenge</a>
                                                 </li>
                                             </ul>
@@ -216,21 +284,36 @@
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="card-content">
-                                        <span class="phase-title">Curso Ciência da Computação</span>
-                                        <h3>BCC no IME - São Paulo/SP</h3>
+                                        <span class="phase-title" data-pt="Curso Ciência da Computação"
+                                            data-en="Computer Science Course">Curso Ciência da Computação</span>
+                                        <h3 data-pt="Bacharelado em Ciência da Computação no IME - São Paulo/SP"
+                                            data-en="Bachelor of Computer Science at IME - Sao Paulo/SP"> Bacharelado em
+                                            Ciência da Computação no IME - São Paulo/SP</h3>
                                         <div class="learning-info">
-                                            <p><strong><i class="bi bi-code-slash"></i> O que aprendi:</strong>
-                                            <ul> Aprofundei meus conhecimentos na área da computação </ul>
+                                            <p>
+                                                <strong>
+                                                    <i class="bi bi-code-slash"></i>
+                                                    <span data-pt="O que aprendi:" data-en="What I learned:">O que
+                                                        aprendi:</span>
+                                                </strong>
+                                            <ul data-pt="Aprofundei meus conhecimentos na área da computação"
+                                                data-en="Deepened my knowledge in the area of computer science">
+                                                Aprofundei meus conhecimentos na área da computação </ul>
                                             </p>
                                         </div>
                                         <div class="extra-info">
-                                            <p><span>Extracurricular:</span>
+                                            <p><span data-pt="Extracurricular:"
+                                                    data-en="Extra-curricular:">Extracurricular:</span>
                                             <ul>
-                                                <li> Iniciação Científica no subprojeto Bike SP do INCT da Internet do
+                                                <li data-pt="Participação na Iniciação Científica no subprojeto Bike SP do INCT da Internet do Futuro para Cidades Inteligentes"
+                                                    data-en="Participation in Science Initiation in the Bike SP subproject of the INCT of the Internet of the Future for Smart Cities ">
+                                                    Iniciação Científica no subprojeto Bike SP do INCT da Internet do
                                                     Futuro para Cidades Inteligentes
                                                 </li>
 
-                                                <li> Gerente negócios e líder de computação no IMEJr </li>
+                                                <li data-pt="Gerente negócios e líder de computação no IMEJr"
+                                                    data-en="Business Manager and Computer Leader at IMEJr"> Gerente
+                                                    negócios e líder de computação no IMEJr </li>
                                             </ul>
                                             </p>
                                         </div>
@@ -253,29 +336,53 @@
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="card-content">
-                                        <span class="phase-title">Curso Sistemas de Informação</span>
-                                        <h3>BSI no ICMC- São Carlos/SP</h3>
+                                        <span class="phase-title" data-pt="Curso Sistemas de Informação"
+                                            data-en="Information Systems Course">Curso Sistemas de Informação</span>
+                                        <h3 data-pt="Bacharelado em Sistemas de Informação no ICMC- São Carlos/SP"
+                                            data-en="Bachelor of Information Systems at ICMC- Sao Carlos/SP">Bacharelado
+                                            em Sistemas de Informação no ICMC- São Carlos/SP</h3>
                                         <div class="learning-info">
-                                            <p><strong><i class="bi bi-code-slash"></i> O que aprendi:</strong>
-                                            <ul> Aprofundei meus conhecimentos de programação, estudando sobre:
-                                                <li> Sistemas operacionais</li>
-                                                <li> Redes de computadores</li>
-                                                <li> Banco de dados</li>
-                                                <li> Criação de jogos seguindo POO</li>
-                                                <li> Comércio Eletrônico</li>
-                                                <li> Engenharia de Software</li>
+                                            <p>
+                                                <strong>
+                                                    <i class="bi bi-code-slash"></i>
+                                                    <span data-pt="O que aprendi:" data-en="What I learned:">O que
+                                                        aprendi:</span>
+                                                </strong>
+                                            <ul>
+                                                <span
+                                                    data-pt="Aprofundei meus conhecimentos de programação, estudando sobre:"
+                                                    data-en="Deepened my knowledge of programming, studying about:">Aprofundei
+                                                    meus conhecimentos de programação, estudando sobre:</span>
+                                                <li data-pt="Sistemas operacionais" data-en="Operating systems">
+                                                    Sistemas operacionais</li>
+                                                <li data-pt="Redes de computadores" data-en="Computer networks"> Redes
+                                                    de computadores</li>
+                                                <li data-pt="Banco de dados" data-en="Database"> Banco de dados</li>
+                                                <li data-pt="Criação de jogos seguindo POO"
+                                                    data-en="Game creation following OOP"> Criação de jogos seguindo POO
+                                                </li>
+                                                <li data-pt="Comércio Eletrônico" data-en="E-commerce"> Comércio
+                                                    Eletrônico</li>
+                                                <li data-pt="Engenharia de Software" data-en="Software Engineering">
+                                                    Engenharia de Software</li>
                                             </ul>
                                             </p>
                                         </div>
                                         <div class="extra-info">
-                                            <p><span>Extracurricular:</span>
+                                            <p><span data-pt="Extracurricular:"
+                                                    data-en="Extra-curricular:">Extracurricular:</span>
                                             <ul>
-                                                <li>
+                                                <li data-pt="Monitora no Observatório Dietrich Schiel (onde aprendi muito sobre
+                                                    como expor conhecimentos para diferentes públicos e melhorei minhas
+                                                    softskills)"
+                                                    data-en="Monitor at the Dietrich Schiel Observatory, where I gained extensive experience in tailoring complex knowledge for diverse audiences and significantly enhanced my soft skills.">
                                                     Monitora no Observatório Dietrich Schiel (onde aprendi muito sobre
                                                     como expor conhecimentos para diferentes públicos e melhorei minhas
                                                     softskills)
                                                 </li>
-                                                <li> Participação na organização do Pint of Science São Carlos</li>
+                                                <li data-pt="Participação na organização do Pint of Science São Carlos"
+                                                    data-en="Participation in the Pint of Science Sao Carlos organization">
+                                                    Participação na organização do Pint of Science São Carlos</li>
                                             </ul>
                                             </p>
                                         </div>
@@ -337,6 +444,7 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/lang.js"></script>
 
 </body>
 

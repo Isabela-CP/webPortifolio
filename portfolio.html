@@ -29,13 +29,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 <script>
   function toggleFlip(cardId) {
@@ -46,23 +39,25 @@
 
 <body class="portfolio-page">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li class="dropdown"><a href="about.html"><span>Sobre mim</span> <i
+          <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+          <li class="dropdown"><a href="about.html" data-pt="Sobre mim" data-en="About me"><span>Sobre mim</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about-study.html">Trajetória de estudos</a></li>
-              <li><a href="extracurricular.html">Extracurricular e Certificações</a></li>
+              <li><a href="about-study.html" data-pt="Trajetória de estudos" data-en="Study trajectory">Trajetória de
+                  estudos</a></li>
+              <li><a href="extracurricular.html" data-pt="Extracurricular e Certificados"
+                  data-en="Extracurricular and Certificates">Extracurricular e Certificados</a></li>
             </ul>
           </li>
-          <li><a href="resume.html">Currículo</a></li>
-          <li><a href="services.html">Interesses profissionais</a></li>
-          <li><a href="portfolio.html" class="active">Projetos</a></li>
-
+          <li><a href="resume.html" data-pt="Curículo" data-en="Resume">Currículo</a></li>
+          <li><a href="services.html" data-pt="Interesses profissionais" data-en="Professional interests">Interesses
+              profissionais</a></li>
+          <li><a href="portfolio.html" class="active" data-pt="Projetos" data-en="Projects">Projetos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -98,8 +93,10 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projetos</h2>
-        <p>Veja um pouco sobre os meus trabalhos durante meus estudos. </p>
+        <h2 data-pt="Projetos" data-en="Projects">Projetos</h2>
+        <p data-pt="Veja um pouco sobre os meus trabalhos durante meus estudos."
+          data-en="See a little bit of my work during my studies.">Veja um pouco sobre os meus trabalhos durante meus
+          estudos. </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -107,7 +104,7 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-jogos">Jogos</li>
+            <li data-filter=".filter-jogos" data-pt="Jogos" data-en="Games">Jogos</li>
             <li data-filter=".filter-mobile">Mobile</li>
             <li data-filter=".filter-figma">Figma</li>
             <li data-filter=".filter-technology">Technology</li>
@@ -134,9 +131,12 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>App Amarelinho</h4>
-                      <p>Protótipo aplicativo de gestão de restaurante familiar no Figma</p>
+                      <p data-pt="Protótipo aplicativo de gestão de restaurante familiar no Figma"
+                        data-en="Management app prototype for a family restaurant in Figma">Protótipo aplicativo de
+                        gestão de restaurante familiar no Figma</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-1')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-1')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -151,21 +151,42 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Solução de gestão desenvolvida sob medida para um restaurante familiar, com foco total em
-                          experiência do usuário (UX).
-                        </p>
-                        <p> O
-                          projeto foi inteiramente moldado a partir de entrevistas com um casal de idosos, priorizando a
-                          usabilidade e
-                          funcionalidades específicas que atendessem às suas rotinas reais, fugindo de padrões genéricos
-                          e focando em utilidade
-                          prática.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        <div class="lang-pt">
+                          <p>
+                            Solução de gestão desenvolvida sob medida para um restaurante familiar, com foco total em
+                            experiência do usuário (UX).
+                          </p>
+                          <p> O
+                            projeto foi inteiramente moldado a partir de entrevistas com um casal de idosos, priorizando
+                            a
+                            usabilidade e
+                            funcionalidades específicas que atendessem às suas rotinas reais, fugindo de padrões
+                            genéricos
+                            e focando em utilidade
+                            prática.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            Tailor-made management solution developed for a family restaurant, with a total focus on
+                            user experience (UX).
+                          </p>
+                          <p> The project was entirely shaped through interviews with an elderly couple, prioritizing
+                            usability and specific features that met their real routines, moving away from generic
+                            patterns
+                            and focusing on practical utility.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        </div>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-1')">
+
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-1')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -191,16 +212,18 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>Artemis 24</h4>
-                      <p>Protótipo de jogo mobile no Figma</p>
+                      <p data-pt="Protótipo de jogo mobile no Figma" data-en="Mobile game prototype in Figma">Protótipo
+                        de jogo mobile no Figma</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-2')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-2')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
 
 
                       <div class="portfolio-tags">
-                        <span>Mobile</span> <span>Figma</span><span>Jogos</span>
+                        <span>Mobile</span> <span>Figma</span><span data-pt="Jogos" data-en="Games">Jogos</span>
                       </div>
 
                     </div>
@@ -208,20 +231,38 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Protótipo de um jogo criado para o NASA Space Apps Challenge 2021.
-                        </p>
-                        <p> O projeto Artemis 24 é um jogo educativo voltado para estudantes amantes de astronomia. A
-                          ideia
-                          é simular os riscos de saúde de uma viagem de longa distância a Marte, traduzindo dados
-                          complexos da NASA em mecânicas
-                          compreensíveis. Os jogadores devem gerir os recursos da tripulação para mantê-los vivos e
-                          saudáveis durante a missão.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        <div class="lang-pt">
+                          <p> Protótipo de um jogo criado para o NASA Space Apps Challenge 2021.
+                          </p>
+                          <p> O projeto Artemis 24 é um jogo educativo voltado para estudantes amantes de astronomia. A
+                            ideia
+                            é simular os riscos de saúde de uma viagem de longa distância a Marte, traduzindo dados
+                            complexos da NASA em mecânicas
+                            compreensíveis. Os jogadores devem gerir os recursos da tripulação para mantê-los vivos e
+                            saudáveis durante a missão.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            Game prototype created for the 2021 NASA Space Apps Challenge.
+                          </p>
+                          <p>
+                            The Artemis 24 project is an educational game designed for astronomy enthusiasts. The goal
+                            is to simulate the health risks of a long-distance journey to Mars, translating complex
+                            NASA data into understandable mechanics. Players must manage crew resources to keep them
+                            alive and healthy throughout the mission.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma, NASA Data</p>
+                        </div>
+
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-2')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-2')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -246,9 +287,11 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>PlanejaAi</h4>
-                      <p>Protótipo aplicativo de gestão financeira no Figma</p>
+                      <p data-pt="Protótipo aplicativo de gestão financeira no Figma"
+                        data-en="Finance app prototype in Figma">Protótipo aplicativo de gestão financeira no Figma</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-3')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-3')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -263,17 +306,30 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Planeja.Ai é um protótipo de uma aplicação de planejamento financeiro, pensado para pessoas
-                          que buscam insights sobre seus gastos, acompanhamento de metas e organização em um mesmo
-                          sistema.
-                        </p>
+                        <div class="lang-pt">
+                          <p class="lang-pt"> Planeja.Ai é um protótipo de uma aplicação de planejamento financeiro,
+                            pensado para pessoas
+                            que buscam insights sobre seus gastos, acompanhamento de metas e organização em um mesmo
+                            sistema.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        </div>
 
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        <div class="lang-en">
+                          <p>
+                            Planeja.Ai is a financial planning prototype designed for individuals seeking spending
+                            insights, goal tracking, and
+                            organization within a single platform.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Figma</p>
+                        </div>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-3')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-3')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -298,9 +354,12 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>mangaManager</h4>
-                      <p>Programa de Gerenciamento de Mangas - Estruturas de Dados</p>
+                      <p data-pt="Programa de Gerenciamento de Mangas - Estruturas de Dados"
+                        data-en="Manga Management Program - Data Structures">Programa de Gerenciamento de Mangas -
+                        Estruturas de Dados</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-4')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-4')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -315,18 +374,34 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Desenvolvimento de uma aplicação robusta para o gerenciamento de acervos, focada em
-                          eficiência de busca e persistência
-                          de dados em baixo nível. O projeto implementa um sistema completo de CRUD (Create, Read,
-                          Update, Delete) com foco em
-                          estruturas de dados otimizadas.</p>
+                        <div class="lang-pt">
+                          <p> Desenvolvimento de uma aplicação robusta para o gerenciamento de acervos, focada em
+                            eficiência de busca e persistência
+                            de dados em baixo nível. O projeto implementa um sistema completo de CRUD (Create, Read,
+                            Update, Delete) com foco em
+                            estruturas de dados otimizadas.</p>
 
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> C, Qt Creator e Estruturas de dados</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> C, Qt Creator e Estruturas de dados</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            Development of a robust application for the management of archives, focused on efficiency
+                            of search and persistence
+                            of data at a low level. The project implements a complete CRUD system (Create, Read,
+                            Update, Delete) with focus on
+                            optimized data structures.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> C, Qt Creator and Data Structures</p>
+                        </div>
+
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-4')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-4')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -351,9 +426,12 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>tutoHora</h4>
-                      <p>Website de agendamento de tutorias para estudantes</p>
+                      <p data-pt="Website de agendamento de tutorias para estudantes"
+                        data-en="Student tutoring appointment platform">Website de agendamento de tutorias
+                        para estudantes</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-5')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-5')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -368,23 +446,35 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p>Programa para contratação de professores e tutoriais, em que os alunos poderão contratar
-                          tutores para auxiliar nas suas
-                          dificuldades escolares, possuindo login/cadastro, bem como uma listagem
-                          de todos os profissionais, contratação de professores disponíveis num formato do cronograma
-                          dos professores e
-                          página exclusiva para os professores, onde eles poderão visualizar suas aulas e alunos.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> .Net Core, React, CSS, HTML, MySQL</p>
+                        <div class="lang-pt">
+                          <p>Programa para contratação de professores e tutoriais, em que os alunos poderão contratar
+                            tutores para auxiliar nas suas
+                            dificuldades escolares, possuindo login/cadastro, bem como uma listagem
+                            de todos os profissionais, contratação de professores disponíveis num formato do cronograma
+                            dos professores e
+                            página exclusiva para os professores, onde eles poderão visualizar suas aulas e alunos.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> .Net Core, React, CSS, HTML, MySQL</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>Tutor and teacher hiring platform where students can book sessions to overcome academic
+                            challenges. The system features
+                            secure authentication, a comprehensive professional directory, an integrated scheduling
+                            calendar for bookings, and a
+                            dedicated dashboard for teachers to manage their classes and students.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> .Net Core, React, CSS, HTML, MySQL</p>
+                        </div>
+                        <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                          onclick="toggleFlip('flip-card-5')">
+                          <i class="bi bi-arrow-left-short"></i> Voltar
+                        </button>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-5')">
-                        <i class="bi bi-arrow-left-short"></i> Voltar
-                      </button>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -405,16 +495,18 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>HopDonut</h4>
-                      <p>Jogo em Pygame desenvolvido para Raspeberry Pi</p>
+                      <p data-pt="Jogo em Pygame desenvolvido para Raspeberry Pi"
+                        data-en="Game in Pygame for Raspberry Pi">Jogo em Pygame desenvolvido para Raspeberry Pi</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-6')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-6')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
 
 
                       <div class="portfolio-tags">
-                        <span>Jogos</span>
+                        <span data-pt="Jogos" data-en="Games">Jogos</span>
                       </div>
 
                     </div>
@@ -422,15 +514,29 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Jogo em que você tem que se mover para coletar os donuts e evitar os obstáculos (rosquinhas
-                          gigantes). O jogo foi desenvolvido para o Raspberry Pi com Python e Pygame.
-                        </p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, Pygame, Raspberry Pi</p>
+                        <div class="lang-pt">
+                          <p> Jogo em que você tem que se mover para coletar os donuts e evitar os
+                            obstáculos
+                            (rosquinhas
+                            gigantes). O jogo foi desenvolvido para o Raspberry Pi com Python e Pygame.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, Pygame, Raspberry Pi</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p class="lang-en"> A game where the player moves to collect donuts while avoiding obstacles
+                            (giant donuts). Developed for Raspberry Pi
+                            using Python and Pygame.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, Pygame, Raspberry Pi</p>
+                        </div>
+
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-6')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-6')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -454,17 +560,19 @@
                       </div>
                     </div>
                     <div class="portfolio-info">
-                      <h4>Fuga das Baratas</h4>
-                      <p>Jogo em Assembly </p>
+                      <h4 data-pt="Fuga das Baratas" data-en="
+Cockroach Escape">Fuga das Baratas</h4>
+                      <p data-pt="Jogo em Assembly" data-en="Game in Assembly">Jogo em Assembly </p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-7')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-7')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
 
 
                       <div class="portfolio-tags">
-                        <span>Jogos</span>
+                        <span data-pt="Jogos" data-en="Games">Jogos</span>
                       </div>
 
                     </div>
@@ -472,18 +580,33 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> "Fuga das Baratas" é um jogo desenvolvido em Assembly, no qual o jogador é o personagem da
-                          música "Toda vez que eu chego
-                          em casa a barata da vizinha ta na minha cama". Para vencer o jogo, ele deve acertar 10
-                          chineladas na barata.
+                        <div class="lang-pt">
+                          <p> "Fuga das Baratas" é um jogo desenvolvido em Assembly, no qual o jogador é o personagem da
+                            música "Toda vez que eu chego
+                            em casa a barata da vizinha ta na minha cama". Para vencer o jogo, ele deve acertar 10
+                            chineladas na barata.
 
-                          O jogo foi projetado para ser executado no Simulador de Processador ou no Simple Simulate.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2024</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Assembly</p>
+                            O jogo foi projetado para ser executado no Simulador de Processador ou no Simple Simulate.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2024</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Assembly</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p> "Fuga das Baratas" (Cockroach Escape) is a game developed in Assembly, inspired by a
+                            popular Brazilian song. Playing as
+                            the homeowner, the user must land 10 "flip-flop hits" on the cockroach to win. The project
+                            was designed to run on
+                            Processor Simulators such as Simple Simulator.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2024</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Assembly</p>
+
+                        </div>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-7')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-7')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -509,16 +632,17 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>Jurassic Escape</h4>
-                      <p>Jogo em Java - POO </p>
+                      <p data-pt="Jogo em Java - POO" data-en="Game in Java - OOP">Jogo em Java - POO </p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-8')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-8')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
 
 
                       <div class="portfolio-tags">
-                        <span>Jogos</span>
+                        <span data-pt="Jogos" data-en="Games">Jogos</span>
                       </div>
 
                     </div>
@@ -526,22 +650,43 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Jurassic Escape é um jogo de aventura e estratégia desenvolvido em Java, focado na aplicação
-                          prática dos pilares de
-                          Programação Orientada a Objetos (POO).
-                        </p>
-                        <p> No jogo, você assume o papel de um paleontólogo perdido em uma ilha repleta de perigos
-                          pré-históricos. Seu objetivo é
-                          atravessar diferentes biomas, sobreviver a encontros com dinossauros icônicos e alcançar o
-                          helicóptero de resgate. O
-                          paleontólogo precisa ser rápido e estratégico para não virar comida de dinossauro.
-                        </p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, POO</p>
+                        <div class="lang-pt">
+                          <p> Jurassic Escape é um jogo de aventura e estratégia desenvolvido em Java, focado na
+                            aplicação
+                            prática dos pilares de
+                            Programação Orientada a Objetos (POO).
+                          </p>
+                          <p> No jogo, você assume o papel de um paleontólogo perdido em uma ilha repleta de perigos
+                            pré-históricos. Seu objetivo é
+                            atravessar diferentes biomas, sobreviver a encontros com dinossauros icônicos e alcançar o
+                            helicóptero de resgate. O
+                            paleontólogo precisa ser rápido e estratégico para não virar comida de dinossauro.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, POO</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p> Jurassic Escape is an adventure and strategy game developed in Java, focusing on the
+                            practical application of
+                            Object-Oriented Programming (OOP) principles.
+                          </p>
+                          <p> In the game, you play as a paleontologist stranded on an island filled with prehistoric
+                            dangers. Your goal is to
+                            navigate through different biomes, survive encounters with iconic dinosaurs, and reach the
+                            rescue helicopter. You must
+                            be quick and strategic to avoid becoming dinosaur food.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, OOP</p>
+
+                        </div>
+
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-8')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-8')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -566,10 +711,12 @@
                       </div>
                     </div>
                     <div class="portfolio-info">
-                      <h4>Labirinto</h4>
-                      <p>Programa para encontrar saídas de labirintos </p>
+                      <h4 data-pt="Labirinto" data-en="Maze">Labirinto</h4>
+                      <p data-pt="Programa para encontrar saídas de labirintos" data-en="Program to find maze exits">
+                        Programa para encontrar saídas de labirintos </p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-9')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-9')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -584,13 +731,22 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Programa em Java que encontra uma saída para um dado labirinto passado em formato .txt</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2020</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, Pilhas, Fila, Matrizes</p>
+                        <div class="lang-pt">
+                          <p> Programa em Java que encontra uma saída para um dado labirinto passado em formato .txt</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2020</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, Pilhas, Fila, Matrizes</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p> Java program that finds an exit for a given maze provided in .txt format.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2020</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Java, Stacks, Queue, Matrices</p>
+                        </div>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-9')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-9')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -616,9 +772,12 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>VastVision</h4>
-                      <p>Solução voltada para pessoas com deficiência visual</p>
+                      <p data-pt="Solução voltada para pessoas com deficiência visual"
+                        data-en="An accessibility-focused solution for the visually impaired.">Solução voltada para
+                        pessoas com deficiência visual</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-10')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-10')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -633,21 +792,41 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> O projeto busca desenvolver um dispositivo eletrônico de
-                          tecnologia assistiva, que seja financeiramente acessível e baseado
-                          em inteligência artificial, podendo reconhecer obstáculos e pessoas
-                          (com a funcionalidade de salvar os rostos mais vistos a partir de
-                          comando de voz) a fim de ampliar a integração de deficientes
-                          visuais no meio social. Assim, o trabalho busca produzir um óculos,
-                          que juntamente com um fone de ouvido e um microfone, e através
-                          de um aplicativo, possa descrever ao usuário o ambiente, para
-                          então promover a inclusão e liberdade de deficientes visuais.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2022</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> ESP32-CAM, Mobile, Impressão 3D</p>
+                        <div class="lang-pt">
+                          <p> O projeto busca desenvolver um dispositivo eletrônico de
+                            tecnologia assistiva, que seja financeiramente acessível e baseado
+                            em inteligência artificial, podendo reconhecer obstáculos e pessoas
+                            (com a funcionalidade de salvar os rostos mais vistos a partir de
+                            comando de voz) a fim de ampliar a integração de deficientes
+                            visuais no meio social. Assim, o trabalho busca produzir um óculos,
+                            que juntamente com um fone de ouvido e um microfone, e através
+                            de um aplicativo, possa descrever ao usuário o ambiente, para
+                            então promover a inclusão e liberdade de deficientes visuais.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2022</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> ESP32-CAM, Mobile, Impressão 3D</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            This project aims to develop an affordable assistive technology device powered by Artificial
+                            Intelligence. It features
+                            obstacle and person recognition, including the ability to save frequently seen faces via
+                            voice commands, to enhance the
+                            social integration of visually impaired individuals. The system consists of smart glasses
+                            paired with a headset and
+                            microphone that, through a dedicated app, describe the environment to the user, promoting
+                            inclusion and independence.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2022</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> ESP32-CAM, Mobile,3D Printing</p>
+                        </div>
+
+
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-10')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-10')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -674,9 +853,13 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>Green Check</h4>
-                      <p> Aplicação para manunenção de árvores em risco em cidades inteligentes</p>
+                      <p data-pt="Aplicação para manunenção de árvores em risco em cidades inteligentes"
+                        data-en="Smart City application for the maintenance and management of high-risk trees.">
+                        Aplicação para
+                        manunenção de árvores em risco em cidades inteligentes</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-11')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-11')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -691,14 +874,28 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> Sistema criado para disciplina de Banco de dados, com o objetivo de ser um sistema de
-                          gerenciamento de árvores em risco em cidades inteligentes.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, HTML, Docker, PostgreSQL</p>
+                        <div class="lang-pt">
+                          <p> Sistema criado para disciplina de Banco de dados, com o objetivo de ser um sistema de
+                            gerenciamento de árvores em risco em cidades inteligentes.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, HTML, Docker, PostgreSQL</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            A database management system developed for a Smart City environment, focused on monitoring
+                            and maintaining high-risk
+                            trees. This project was created as part of a Database course to streamline urban safety and
+                            environmental management.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Year:</strong> 2025</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> Python, HTML, Docker, PostgreSQL</p>
+                        </div>
                       </div>
-                      <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-11')">
+                      <button data-pt="Voltar" data-en="Back" type="button" class="btn-flip-back"
+                        onclick="toggleFlip('flip-card-11')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
                       </button>
                     </div>
@@ -724,9 +921,11 @@
                     </div>
                     <div class="portfolio-info">
                       <h4>UNIS - Untold Isle</h4>
-                      <p> Projeto para SuperPOSITRON Hackathon</p>
+                      <p data-pt="Projeto para SuperPOSITRON Hackathon" data-en="Project for SuperPOSITRON Hackathon">
+                        Projeto para SuperPOSITRON Hackathon</p>
 
-                      <button type="button" class="btn-flip-trigger" onclick="toggleFlip('flip-card-12')">
+                      <button data-pt="Saiba Mais" data-en="Learn More" type="button" class="btn-flip-trigger"
+                        onclick="toggleFlip('flip-card-12')">
                         Saiba Mais <i class="bi bi-arrow-right-short"></i>
                       </button>
 
@@ -741,19 +940,39 @@
 
                   <div class="flip-card-back">
                     <div class="back-content">
-                      <h3>Sobre o Projeto</h3>
+                      <h3 data-pt="Sobre o Projeto" data-en="About the Project">Sobre o Projeto</h3>
                       <div class="back-scroll">
-                        <p> O UNIS - Untold Isle é um projeto de representatividade literária que utiliza uma plataforma
-                          digital para dar voz a
-                          protagonistas de grupos minoritários. O objetivo é oferecer narrativas onde pessoas negras, a
-                          comunidade LGBTQIA+,
-                          idosos e pessoas com deficiência (como heróis cegos) sejam os personagens principais. A
-                          plataforma promove a inclusão
-                          social ao validar histórias "não contadas", garantindo um ambiente seguro através de regras
-                          rígidas de respeito aos
-                          direitos humanos e repúdio ao preconceito.</p>
-                        <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
-                        <p><strong><i class="bi bi-cpu"></i> Techs:</strong> CSS, HTML, JavaScript</p>
+                        <div class="lang-pt">
+                          <p> O UNIS - Untold Isle é um projeto de representatividade literária que utiliza uma
+                            plataforma
+                            digital para dar voz a
+                            protagonistas de grupos minoritários. O objetivo é oferecer narrativas onde pessoas negras,
+                            a
+                            comunidade LGBTQIA+,
+                            idosos e pessoas com deficiência (como heróis cegos) sejam os personagens principais. A
+                            plataforma promove a inclusão
+                            social ao validar histórias "não contadas", garantindo um ambiente seguro através de regras
+                            rígidas de respeito aos
+                            direitos humanos e repúdio ao preconceito.</p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> CSS, HTML, JavaScript</p>
+                        </div>
+
+                        <div class="lang-en">
+                          <p>
+                            UNIS - Untold Isle is a literary representation project that utilizes a digital platform to
+                            amplify the voices of
+                            protagonists from minority groups. Its goal is to provide narratives where Black
+                            individuals, the LGBTQIA+ community,
+                            the elderly, and people with disabilities (such as blind heroes) are the main characters.
+                            The platform promotes social
+                            inclusion by validating "untold" stories, ensuring a safe environment through strict rules
+                            of respect for human rights
+                            and zero tolerance for prejudice.
+                          </p>
+                          <p><strong><i class="bi bi-calendar3"></i> Ano:</strong> 2021</p>
+                          <p><strong><i class="bi bi-cpu"></i> Techs:</strong> CSS, HTML, JavaScript</p>
+                        </div>
                       </div>
                       <button type="button" class="btn-flip-back" onclick="toggleFlip('flip-card-12')">
                         <i class="bi bi-arrow-left-short"></i> Voltar
@@ -822,6 +1041,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/theme.js"></script>
+  <script src="assets/js/lang.js"></script>
 
 </body>
 
