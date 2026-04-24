@@ -1,27 +1,10 @@
-/**
-* Template Name: FolioOne
-* Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-* Updated: Aug 23 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
-}
-
-/* Variáveis que são iguais em ambos os modos (Fontes, etc) */
-:root {
-  --default-font: "Roboto", system-ui, -apple-system, sans-serif;
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --nav-hover-color: #A63352;
+  --nav-dropdown-hover-color: #A63352;
 }
 
 /* MODO DARK (Seu padrão atual - coloque suas cores aqui) */
@@ -62,33 +45,6 @@
   --nav-mobile-background-color: #fdf0f0;
   --nav-dropdown-background-color: #feeaea;
 }
-
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-/*:root {
-  --background-color: #101a20;
-  --default-color: #e7f2f7;
-  --heading-color: #f4ebed;
-  --accent-color: #A63352;
-  --surface-color: #141f26;
-  --contrast-color: #ffffff;
-}*/
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-
-  /* The default color of the main navmenu links */
-  --nav-hover-color: #A63352;
-  /* Applied to main navmenu links when they are hovered over or active */
-
-  /* Used as the background color for mobile navigation menu */
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-
-  /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #A63352;
-  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 
 /* Smooth scroll */
@@ -460,7 +416,11 @@ h6 {
   .navmenu .active:focus i {
     background-color: var(--accent-color);
     color: var(--contrast-color);
+  }
+
+  .navmenu .dropdown:has(ul.dropdown-active)>a i {
     transform: rotate(180deg);
+    transition: 0.3s;
   }
 
   .navmenu .dropdown ul {
